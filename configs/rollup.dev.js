@@ -9,14 +9,15 @@ export default {
     sourcemap: true,
     file: 'example/index.js',
     format: 'umd',
-    name: 'bundle'
+    name: 'kuLeg'
   },
   plugins: [
     ...baseConfig.plugins,
-    html(),
+    // html(),
     serve({
       open: true,
       port: 8008,
+      historyApiFallback: '/example.html',
       contentBase: ['example']
     }),
     livereload('example')

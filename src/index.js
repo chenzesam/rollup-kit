@@ -1,1 +1,2 @@
-alert('你好呀')
+const a = 123
+export default a

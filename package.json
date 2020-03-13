@@ -2,12 +2,14 @@
   "name": "ku-leg",
   "version": "0.0.1",
   "description": "library fro scaffold",
-  "main": "dist/index.esm.js",
-  "browser": "dist/index.umd.js",
+  "main": "dist/index.cjs.js",
+  "browser": "dist/index.browser.js",
+  "module": "dist/index.esm.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rimraf dist && rimraf example/index.js && rimraf example/index.js.map",
     "build": "rimraf dist && cross-env NODE_ENV=production rollup -c ./configs/rollup.pro.js",
-    "start": "rimraf example && cross-env NODE_ENV=development rollup --watch -c ./configs/rollup.dev.js"
+    "start": "cross-env NODE_ENV=development rollup --watch -c ./configs/rollup.dev.js"
   },
   "keywords": [
     "scaffold",
@@ -23,6 +25,8 @@
     "rimraf": "^3.0.2",
     "rollup": "^2.0.4",
     "rollup-plugin-livereload": "^1.0.4",
-    "rollup-plugin-serve": "^1.0.1"
+    "rollup-plugin-serve": "^1.0.1",
+    "rollup-plugin-sizes": "^1.0.1",
+    "rollup-plugin-terser": "^5.3.0"
   }
 }
