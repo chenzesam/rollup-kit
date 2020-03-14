@@ -1,2 +1,1 @@
-const a = 123
-export default a
+// just write something you like
