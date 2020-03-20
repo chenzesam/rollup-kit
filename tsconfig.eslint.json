@@ -3,4 +3,9 @@
     "baseUrl": ".",
     "resolveJsonModule": true,
   },
+  "include": [
+    "**/*.ts",
+    "**/*.js",
+    "type.d.ts"
+  ],
 }
