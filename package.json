@@ -7,7 +7,7 @@
   "module": "dist/index.esm.js",
   "scripts": {
     "test": "jest --coverage=true",
-    "prebuild": "rimraf dist && rimraf example/index.js && rimraf example/index.js.map",
+    "prebuild": "rimraf dist && rimraf example/index.js && rimraf example/index.js.map && rimraf example/index.d.ts",
     "build": "rimraf dist && cross-env NODE_ENV=production rollup -c ./configs/rollup.pro.js",
     "start": "cross-env NODE_ENV=development rollup --watch -c ./configs/rollup.dev.js"
   },
