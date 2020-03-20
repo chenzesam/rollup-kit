@@ -10,7 +10,11 @@
 
 - [x] 添加多种输出模式(esm, cjs 等), 并配置 package.json 根据环境不同的引用;
 
-- [ ] 添加 ts 支持;
+- [x] 添加 ts 支持;
+
+- [x] 添加 jest 支持;
+
+- [x] 添加 eslint 支持;
 
 ## How to use
 
