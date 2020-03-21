@@ -18,6 +18,8 @@
 
 - [x] fix: 解决开发环境生成的 types 问题;
 
+- [ ] feat: 添加 commit 检测;
+
 ## How to use
 
 ```shell
