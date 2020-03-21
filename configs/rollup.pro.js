@@ -38,7 +38,9 @@ export default {
   plugins: [
     ...baseConfig.plugins,
     eslint(),
-    ts(),
+    ts({
+      useTsconfigDeclarationDir: true,
+    }),
     terser(),
     sizes(),
   ],

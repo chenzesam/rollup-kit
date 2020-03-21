@@ -4,17 +4,19 @@
 
 ## Roadmap
 
-- [x] 简单的本地开发环境;
+- [x] feat: 简单的本地开发环境;
 
-- [x] 完善配置, 支持简单的打包;
+- [x] feat: 完善配置, 支持简单的打包;
 
-- [x] 添加多种输出模式(esm, cjs 等), 并配置 package.json 根据环境不同的引用;
+- [x] feat: 添加多种输出模式(esm, cjs 等), 并配置 package.json 根据环境不同的引用;
 
-- [x] 添加 ts 支持;
+- [x] feat: 添加 ts 支持;
 
-- [x] 添加 jest 支持;
+- [x] feat: 添加 jest 支持;
 
-- [x] 添加 eslint 支持;
+- [x] feat: 添加 eslint 支持;
+
+- [x] fix: 解决开发环境生成的 types 问题;
 
 ## How to use
 

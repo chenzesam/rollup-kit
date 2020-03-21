@@ -2,3 +2,5 @@ package-lock.json
 node_modules
 dist
 coverage
+types
+/example/index.*

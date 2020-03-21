@@ -15,7 +15,9 @@ export default {
   plugins: [
     ...baseConfig.plugins,
     eslint(),
-    ts(),
+    ts({
+      useTsconfigDeclarationDir: true,
+    }),
     serve({
       open: true,
       port: 8008,
