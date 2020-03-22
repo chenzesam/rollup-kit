@@ -18,7 +18,7 @@
 
 - [x] fix: 解决开发环境生成的 types 问题;
 
-- [ ] feat: 添加 commit 检测;
+- [x] feat: 添加 commit 检测(需要 npm run commit 做提交);
 
 ## How to use
 

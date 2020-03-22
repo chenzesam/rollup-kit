@@ -7,6 +7,7 @@
   "module": "dist/index.esm.js",
   "scripts": {
     "test": "jest --coverage=true",
+    "commit": "git-cz",
     "prebuild": "rimraf dist",
     "build": "rimraf dist && cross-env NODE_ENV=production rollup -c ./configs/rollup.pro.js",
     "start": "cross-env NODE_ENV=development rollup --watch -c ./configs/rollup.dev.js"
@@ -19,13 +20,20 @@
   "license": "ISC",
   "types": "types",
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
     "@types/jest": "^25.1.4",
     "@typescript-eslint/eslint-plugin": "^2.24.0",
     "@typescript-eslint/parser": "^2.24.0",
+    "commitizen": "^4.0.3",
     "cross-env": "^7.0.2",
+    "cz-conventional-changelog": "^3.1.0",
     "eslint": "^6.8.0",
+    "eslint-config-airbnb-typescript": "^7.2.0",
+    "eslint-plugin-import": "^2.20.1",
+    "husky": "^4.2.3",
     "jest": "^25.1.0",
     "rimraf": "^3.0.2",
     "rollup": "^2.0.4",
@@ -40,7 +48,16 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "eslint-config-airbnb-typescript": "^7.2.0",
-    "eslint-plugin-import": "^2.20.1"
+
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
