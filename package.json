@@ -47,9 +47,7 @@
     "tslib": "^1.11.1",
     "typescript": "^3.8.3"
   },
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
