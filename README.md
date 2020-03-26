@@ -20,6 +20,8 @@
 
 - [x] feat: 添加 commit 检测(需要 npm run commit 做提交);
 
+- [x] feat: example 使用 parcel 启动, 提升开发体验;
+
 ## How to use
 
 ```shell

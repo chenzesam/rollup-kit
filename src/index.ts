@@ -1,8 +1,5 @@
-// just write something you like
-import sum from './sum';
-import add from './add';
-
-export {
-  sum,
-  add,
+const rollupKit = {
+  say: (): void => console.log('i am rollup-kit'),
 };
+
+export default rollupKit;
