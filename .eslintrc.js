@@ -15,11 +15,6 @@ const eslintrc = {
   },
   parserOptions: {
       project: './tsconfig.eslint.json',
-      ecmaVersion: 2019,
-      sourceType: 'module',
-      ecmaFeatures: {
-        experimentalObjectRestSpread: true
-      }
   },
   globals: {
     test: true,
