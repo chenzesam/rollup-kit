@@ -1,4 +1,4 @@
-# rollup 脚手架
+# rollup-kit
 
 Rollup based project structure for building wheels
 
