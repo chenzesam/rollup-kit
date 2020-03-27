@@ -14,3 +14,4 @@ dist
 types
 configs
 example
+jest.config.js
