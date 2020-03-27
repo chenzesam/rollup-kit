@@ -4,8 +4,8 @@
     "resolveJsonModule": true,
   },
   "include": [
-    "**/*.ts",
-    "**/*.js",
+    "src",
+    "__tests__",
     "./typing.d.ts"
   ],
 }

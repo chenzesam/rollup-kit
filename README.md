@@ -1,6 +1,19 @@
 # rollup 脚手架
 
-  用于打包库使用的 rollup 脚手架;
+Rollup based project structure for building wheels
+
+## How to use
+
+```shell
+# clone thr project or use this template
+cd [project]
+npm i
+npm run start
+
+cd example
+npm i
+npm run start
+```
 
 ## Roadmap
 
@@ -21,13 +34,3 @@
 - [x] feat: 添加 commit 检测(需要 npm run commit 做提交);
 
 - [x] feat: example 使用 parcel 启动, 提升开发体验;
-
-## How to use
-
-```shell
-git clone [project] [projectName]
-cd [projectName]
-npm i
-// wite somthing to sr/index.js
-npm run start
-```

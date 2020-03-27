@@ -19,6 +19,9 @@ const eslintrc = {
   globals: {
     test: true,
     expect: true
+  },
+  rules: {
+    "import/no-extraneous-dependencies": 0
   }
 }
 
