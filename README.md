@@ -8,6 +8,7 @@ Rollup based project structure for building wheels
 # clone thr project or use this template
 cd [project]
 npm i
+npm run install-peer
 npm run start
 
 cd example
