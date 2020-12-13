@@ -1,6 +1,6 @@
 # rollup-kit
 
-Rollup based project structure for building wheels
+Project wheel template based on Rollup.
 
 ## How to use
 
